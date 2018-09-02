@@ -127,6 +127,7 @@ def get_unchecked_ultimate_descendants(tree):
 
 def set_all_ancestors_checked(node):
 
+    """ sets all ancestors of a specific node checked"""
     while (node):
 
         node.checked = True
