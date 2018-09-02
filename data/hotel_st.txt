@@ -1,0 +1,699 @@
+a diamond in the ruff 7
+a mess -4
+add insult to injury -5
+adequate 1
+adorably 6
+afraid -2
+aggressive -6
+almost perfect 5
+amazed 4
+amazing 7
+angry -6
+annoying -3
+anxious -5
+anything like 0
+appealing 4
+are like 0
+aren't so great -2
+as well 0
+astounding 7
+avoid -2
+awesome 7
+awful -6
+bad -5
+bad luck -3
+badly -5
+bankrupt -5
+barely can -3
+barely useable -4
+bastard -3
+beautiful 4
+beautifully 4
+below standard -7
+best 8
+best of both worlds -4
+best time 1
+best western 0
+better 4
+better not -2
+big fan 4
+big mistake -8
+blindly -2
+blotchy -5
+boring -3
+bothersome -4
+brand new 3
+break -3
+breaks -3
+brilliant 8
+broke -3
+broken -3
+can barely -3
+can't be happier 7
+can't complain 0
+can't even use -5
+can't go wrong 2
+can't grumble 4
+can't recommend -3
+can't recommend enough 7
+can't use -5
+cannot install -4
+cannot recommend -3
+cannot say a bad word 1
+cannot use -5
+cant say a bad word 1
+cant use -6
+charming 5
+clean 4
+comfortable 6
+comfy 5
+complained -4
+complaining -4
+complaint -4
+complaints -4
+completely dead -6
+completely worthless -10
+compliments 3
+confused -3
+cons -3
+contented 3
+convenient 4
+cool 3
+correct 4
+costs an arm and a leg -6
+couldn't be happier 7
+couldn't use -6
+crack -4
+cracked -3
+crackled -4
+cracks -4
+cramped -3
+crap -4
+crappy -4
+crash better -5
+crashes -4
+creepy -4
+criticism -6
+criticizing -3
+crowded -6
+cut corners -6
+damaged -4
+damn -5
+damn good 7
+dangerous -5
+dated -2
+dead -4
+deceitful -6
+decent 3
+deception -4
+defect -4
+defected -4
+defective -5
+deficient -3
+delicious 5
+delighted 5
+delightfully 3
+did not fit -3
+did not have a good stay -8
+did not like -7
+did not stay -6
+did not work -6
+didn't buy -3
+didn't help -5
+didn't identify -3
+didn't impress -5
+didn't like -5
+didn't work -5
+didn't work very well -4
+didnt like -5
+die -4
+died -4
+dies -4
+difficult -5
+dingy -6
+dirtiest -10
+dirty -6
+dirty spots -2
+disappoint -6
+disappointed -8
+disappointing -6
+disappointment -8
+disappointments -8
+disappoints -6
+disaster -6
+disgrace -4
+disgraceful -4
+disgusted -7
+disgusting -7
+dislike -5
+displeasure -6
+disruption -5
+dissapointed -5
+disturbance -7
+disturbing -4
+do not buy -6
+do not like -5
+do not stay -7
+do the job 2
+does not work -6
+does the job 2
+doesn't like -5
+doesn't respond to -4
+doesn't support -2
+doesn't work -6
+don't buy -6
+don't impress -5
+don't like -5
+don't purchase -6
+don't recommend -7
+don't stay -4
+don't work -6
+donot work -6
+dont buy -6
+dont recommend -3
+Dont stay -4
+don’t give up the day job -4
+doubtful -3
+drain -3
+drains -3
+drawback -4
+dreadful -5
+dull -4
+dump -4
+dusty -4
+easy to 5
+ecstatic 5
+effective 4
+efficient 4
+efficiently 4
+elegant 6
+else like 0
+embarrassed -3
+enhanced 3
+enjoying 5
+enlivened 4
+excactly like 0
+excelente 5
+excellent 7
+exceptional 2
+exhausting -4
+extremely frustrating -10
+extremely good 10
+extremely uncomfortable -10
+fabulous 5
+fail -3
+fairly small -5
+fake -5
+fake or not -1
+fantastic 4
+far cry from -7
+fault -5
+faulty -5
+favorite 3
+feel like 0
+feels like 0
+felt like 0
+fill my need 3
+fill my needs 3
+filthy -6
+fine 2
+finest 7
+flaw -5
+flawed -5
+flaws -5
+fragile -3
+fraud -2
+freeze -3
+freezes -3
+freezing -3
+friendly 3
+froze -4
+frustrated -5
+frustrating -5
+frustration -5
+fun 3
+funny smell -4
+garbage -5
+genuine 2
+getting better 2
+give up -3
+glad 4
+gladly 4
+glitch -4
+glitching -4
+glitchy -4
+good 4
+good deal 4
+gorgeous 6
+great 6
+great deal 7
+great job 5
+great service 7
+great value 4
+greatest 8
+gross -4
+grubby -6
+gruelling -6
+had a problem -3
+had never bought -4
+handy 3
+happier 4
+happy 3
+happy hour 1
+hassle -3
+hate -5
+hate to admit 0
+hated -5
+hatefully -7
+hatred -4
+have a problem -3
+headache -2
+headaches -2
+helpful 3
+hideous -7
+highly recommended 5
+hit the nail on the head 8
+horrendous -8
+horrible -6
+I'd better -1
+idiot -4
+illegally -3
+impressed 5
+in need of refurbishing -2
+inadequate -2
+incapable -5
+inconvenient -5
+incredibly small -3
+insulted -5
+intact 2
+intimidating -4
+inviting 3
+irritating -7
+is dead -4
+is like 0
+isn't bad 3
+isn't great -4
+isn't that great -2
+isn't working -6
+issue -3
+issues -3
+its like 0
+jerks -4
+joke -2
+junk -4
+just like 0
+klutz -3
+lack -4
+lacked -4
+lacking -4
+lacks -4
+lag -4
+laggy -4
+lags -4
+lame -3
+large 4
+last longer 3
+last straw -5
+lazy -4
+lier -3
+life saver 3
+like 3
+like me 0
+liked 2
+limitation -4
+limitations -4
+limited -4
+little disturbance 1
+little noise 1
+little small -4
+look like 0
+looked like 0
+looks like 0
+losing hope -5
+love 6
+loved 6
+lovely 6
+loves 6
+loving 6
+low quality -5
+low-quality -5
+loyal 4
+lump -3
+luv 6
+madness -4
+malfunctions -5
+masterpiece 5
+masterpieces 5
+mess -4
+misfortune -5
+mistake -5
+misuse -3
+moans -4
+musty -5
+nasty -4
+negative -5
+nerve-racking -6
+never buy -8
+never buying -8
+never disappoints 2
+never had a problem 1
+never have a problem 2
+never heard any noise 4
+never lags 1
+never purchase -7
+never recommend -5
+never stay -7
+nice 4
+nicely appointed 6
+no chance -3
+no coffee -4
+no complaining 0
+no complaint 0
+no complaints 0
+no good -3
+no issues 3
+no luck -5
+no noise 2
+no parking -4
+no problem 1
+no problems 1
+no response -3
+no room service -4
+no security -6
+no solutions -3
+no trouble 1
+no unpleasant 0
+no value -6
+no view -4
+no warm welcome -6
+noise -6
+noisiest -10
+noisy -7
+not a big fan -3
+not a brand new -3
+not a good idea -2
+not a problem 1
+not a very good -4
+not able to -5
+not acceptable -4
+not as described -4
+not as good -3
+not as pleasant -4
+not at all impressed -4
+not at all satisfactory -4
+not bad 3
+not be able to -5
+not be buying -6
+not be disappointed 1
+not be returning -7
+not be staying -7
+not better -3
+not buy -4
+not clean -6
+not cleaned -5
+not comfortable -6
+not compatible -3
+not complaining 0
+not correct -4
+not damaged 0
+not disappoint 0
+not disappointed 3
+not enjoyable -4
+not enough -3
+not even be able to -5
+not fake -3
+not free -3
+not fully support -2
+not good -5
+not great -5
+not happy -3
+not helpful -4
+not impressed -5
+not like -2
+not likely to visit -7
+not okay -3
+not perfect -2
+not pleasant -4
+not recommend -5
+not recommended -5
+not return -7
+not safe -5
+not satisfied -5
+not so great -5
+not so happy -5
+not so nice -4
+not soundproof -6
+not such a great -7
+not support -3
+not sure -3
+not that clean -3
+not that great -4
+not that perfect -3
+not that thrilled -2
+not the best -2
+not the greatest -4
+not the problem 0
+not too bad 1
+not very good -4
+not very helpful -5
+not very impressed -6
+not waterproof -3
+not working -6
+not worth -5
+not worthy -5
+nothing bad 3
+nothing goes wrong 0
+nothing like 0
+obnoxiously -6
+offensive -3
+ok 1
+okey 1
+old fashioned -1
+out of luck -3
+outdated -2
+outstanding 7
+outstandingly 7
+over priced -4
+over the moon 7
+overheat -4
+overheating -4
+overheats -4
+overpriced -4
+painless 2
+pathetic -4
+patient 3
+perfect 10
+perfectly 10
+perfecto 10
+piece of cake 4
+pity -4
+plague -4
+pleasant 4
+please with 5
+pleased 6
+plummet -4
+plummeted -4
+poop -5
+poor -3
+poor at best -7
+poorly -3
+poorly trained -6
+powerful 5
+pretty 3
+pretty annoying -3
+pretty bad -3
+pretty cool 3
+pretty expensive -7
+pretty good 3
+pretty mediocre -2
+pretty much 0
+pretty nice 3
+pretty strong 3
+pretty sure 0
+pricey -4
+problem -4
+problems -4
+professional 5
+pros 3
+proud 3
+proudly 3
+quirky -6
+really bad -8
+really like 7
+really love 8
+really really love 10
+reasonable 3
+recommend 3
+recommendable 3
+recommended 3
+regret -4
+regretting -4
+remarkable 3
+ridiculous -4
+ripped off -6
+ripping -2
+rough -2
+rubbish -5
+rude -6
+rudest -10
+sad -3
+sadly -3
+safe 5
+saggy -5
+satisfactory 5
+satisfied 5
+scarily -4
+scratches -2
+seem like 0
+seemed perfect 5
+seems like 0
+sence of humour 3
+shabby -5
+shame -4
+shame on -4
+sick of -5
+skeptical -3
+sleek 5
+sluggish -3
+sluggishly -3
+smell of sewage -7
+so loud -5
+so slow -4
+something like 0
+sophisticated 4
+sorry -2
+spacious 5
+spectacular 3
+stable 3
+stained -5
+stains -4
+stay somewhere else -7
+steal -4
+stinks -4
+stop working -3
+stopped working -3
+stops working -3
+stuffy -4
+stunning 5
+stupid -3
+sturdy 3
+suck -3
+suck up -3
+sucks -3
+superb 4
+superior 5
+supper 5
+supportive 3
+tatty -3
+tedious -5
+terrible -7
+things like 0
+thrilled 5
+tidy 2
+tiny -4
+tired -3
+too bad -5
+too difficult -7
+too loud -5
+too small -7
+too tiny -7
+trash -3
+trouble -4
+trusted 6
+ugly -5
+unable to -5
+unacceptable -6
+unappetising -6
+unappetizing -6
+unbearable -4
+unbeatable 7
+uncomfortable -4
+unfortunately -5
+unhappy -3
+unhelpful -3
+unhygienic -7
+unique 4
+unnecessary -3
+unpleasant -4
+unresponsive -4
+unrivaled 4
+unsafe -7
+unsatisfied -4
+unusable -5
+unuseable -5
+unwelcome -3
+unwelcoming -6
+upset -4
+useable 3
+used to like 1
+useful 3
+useless -5
+valued 7
+very bad -7
+Very Disappointed -8
+very good 8
+very loadly -3
+very noisy -10
+very old -4
+very pleasant 8
+very poor -7
+very small -3
+very well 6
+want to like -3
+wanted to like -3
+warm welcome 5
+was like 0
+wasn't a big issue 0
+wasn't bad 3
+wasn't friendly -5
+wasn't good -5
+wasn't great -1
+wasn't too bad 2
+wasn't too happy -5
+wasn't very efficient -5
+wasn't working -4
+waste -5
+weak -5
+wearing out -3
+weary -4
+weird -3
+well 2
+well done 5
+well located 5
+well maintained 5
+well served 5
+well-equipped 5
+well-known 2
+well-located 5
+what the hell -6
+what worse -5
+what's worse -5
+whole nine yards 9
+will not come back -8
+without any problems 1
+without difficulty 2
+woefully inadequate -8
+won't come back -8
+won't go wrong 2
+won't help -4
+won't stay -6
+wonderful 5
+wont recommend -5
+wore out -3
+work well 5
+works well 5
+worn -3
+worried -3
+worse -7
+worst -10
+worthless -7
+would be good 1
+would like 0
+would not stay -7
+wouldn't recommend -5
+wouldn't stay -7
+wouldn't suggest -6
+wouldn't work -3
+wouldnt recommend -5
+wrong -2
+yucky -5

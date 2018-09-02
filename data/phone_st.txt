@@ -1,0 +1,576 @@
+a mess -4
+add insult to injury -5
+adequate 1
+adorably 6
+afraid -2
+amazed 4
+amazing 7
+angry -6
+annoying -3
+anxious -5
+appealing 4
+are like 0
+aren't so great -2
+as well 0
+astounding 7
+avoid -2
+awesome 7
+awful -6
+small -3
+very small -6
+bad -5
+really hot -3
+hot -2
+bad luck -3
+badly -5
+bankrupt -5
+barely can -3
+barely useable -4
+bastard -3
+beautiful 4
+beautifully 4
+best 8
+best of both worlds -4
+better 5
+better not -2
+big fan 4
+big mistake -8
+blindly -2
+blotchy -5
+boring -3
+bothersome -4
+brand new 3
+break -3
+breaks -3
+brilliant 8
+broke -3
+broken -3
+can barely -3
+can't be happier 7
+can't complain 0
+can't even use -5
+can't grumble 4
+can't recommend -3
+can't recommend enough 7
+can't use -5
+cannot install -4
+cannot recommend -3
+cannot say a bad word 1
+cannot use -5
+cant say a bad word 1
+cant use -6
+charming 5
+clean 3
+hard -3
+very hard -6
+complaining -3
+complaint -3
+complaints -3
+completely dead -6
+completely worthless -10
+compliments 3
+confused -3
+cons -3
+contented 3
+convenient 4
+cool 3
+correct 4
+costs an arm and a leg -6
+couldn't be happier 7
+couldn't use -6
+crack -4
+cracked -4
+crackled -4
+cracks -4
+crap -4
+crappy -4
+crash better -5
+crashes -4
+crashing -4
+criticism -6
+criticizing -3
+cut corners -6
+damaged -4
+damn -5
+damn good 7
+dangerous -5
+dead -4
+deceitful -6
+decent 3
+deception -4
+defect -4
+defected -4
+defective -5
+delighted 5
+delightfully 3
+did not fit -3
+did not like -7
+did not work -6
+didn't buy -3
+didn't help -5
+didn't identify -3
+didn't impress -5
+didn't like -5
+didn't work -5
+didnt like -5
+die -4
+died -4
+dies -4
+difficult -5
+very difficult -8
+dirty -6
+dirty spots -2
+disappoint -6
+disappointed -6
+disappointing -6
+disappointment -6
+disappointments -6
+disappoints -6
+disaster -7
+disgusted -7
+disgusting -7
+dislike -5
+displeasure -6
+dissapointed -5
+disturbing -4
+do not buy -6
+do not like -5
+do the job 2
+does not work -6
+does the job 2
+doesn't respond to -4
+doesn't support -2
+doesn't work -6
+doesn't charge -6
+don't buy -7
+don't impress -5
+don't like -5
+don't purchase -6
+don't recommend -7
+don't work -6
+donot work -6
+dont buy -6
+dont recommend -3
+don’t give up the day job -4
+doubtful -3
+drain -3
+drains -3
+dreadful -5
+dull -4
+dump -4
+easy to 5
+ecstatic 5
+effective 4
+efficient 4
+efficiently 4
+elegant 6
+else like 0
+embarrassed -3
+enhanced 3
+enjoying 5
+excactly like 0
+excelente 5
+excellent 7
+exceptional 2
+excellent product 10
+extremely frustrating -10
+extremely good 10
+extremely uncomfortable -10
+fabulous 5
+fake -5
+fake or not -1
+fan 2
+fantastic 4
+far cry from -7
+fault -5
+faulty -5
+favorite 3
+feel like 0
+feels like 0
+fill my need 3
+fill my needs 3
+fine 2
+finest 7
+flaw -5
+flawed -5
+flaws -5
+fragile -3
+fraud -2
+freeze -4
+freezes -4
+freezing -4
+friendly 3
+froze -4
+froze up -4
+frozen -4
+frustrated -5
+frustrating -5
+frustration -5
+fun 3
+garbage -5
+genuine 2
+getting better 2
+give up -3
+glad 4
+gladly 4
+glitch -4
+glitching -4
+glitchy -4
+woefully lacking -6
+good 4
+good deal 4
+gorgeous 6
+great 6
+great deal 7
+great value 4
+greatest 8
+had a problem -3
+had never bought -4
+handy 3
+happier 4
+happy 3
+hassle -3
+hate -5
+hate to admit 0
+hated -5
+hatefully -7
+hatred -4
+have a problem -3
+headache -2
+headaches -2
+helpful 3
+cheaply made -5
+highly recommended 5
+hit the nail on the head 8
+horrendous -5
+horrible -8
+I'd better -1
+illegally -3
+impressed 5
+inadequate -2
+incapable -5
+inconvenient -5
+incredibly disappointed -10
+intact 2
+irritating -7
+is dead -4
+is like 0
+isn't bad 3
+isn't that great -2
+isn't working -6
+issue -3
+issues -3
+its like 0
+joke -2
+junk -4
+just like 0
+king 5
+klutz -3
+lack -4
+lacked -4
+lacking -4
+lacks -4
+lag -4
+lagging -4
+laggy -4
+lags -4
+lame -3
+last longer 3
+last straw -5
+lazy -4
+lier -3
+life saver 3
+like 3
+like me 0
+liked 2
+limitation -4
+limitations -4
+limited -4
+look like 0
+looked like 0
+looks like 0
+losing hope -5
+love 6
+loved 6
+lovely 6
+loves 6
+loving 6
+low quality -5
+loyal 4
+lump -3
+luv 6
+madness -4
+malfunctions -5
+marvellous 6
+masterpiece 5
+masterpieces 5
+mess -4
+messes -4
+mistake -5
+misuse -3
+negative -5
+never buy -8
+never buying -8
+never disappoints 2
+never had a problem 1
+never have a problem 2
+never lags 1
+never purchase -7
+never recommend -5
+nice 4
+no chance -3
+no complaining 1
+no complaint 1
+no complaints 1
+no good -3
+no issues 3
+no luck -5
+no problem 1
+no problems 1
+no response -3
+no solutions -3
+no trouble 1
+no unpleasant 0
+no value -6
+noise -1
+not a big fan -3
+not a good idea -2
+not a good quality -3
+not a problem 1
+not a very good -4
+very easy 7
+shuts off -8
+not able to -5
+not acceptable -4
+not as described -4
+not as good -3
+not as pleasant -4
+not at all impressed -4
+not at all satisfactory -4
+not bad 3
+not be able to -5
+not be buying -6
+not be disappointed 1
+not better -3
+not buy -4
+not compatible -3
+not complaining 0
+not correct -4
+not damaged 0
+not disappoint 0
+not disappointed 3
+not enjoyable -4
+not enough -3
+not even be able to -5
+not fake 2
+not fully support -2
+not good -5
+not great -5
+not happy -3
+not helpful -4
+not impressed -2
+not like -2
+not perfect -3
+not pleasant -4
+not recommend -5
+not satisfied -5
+not so great -3
+not so happy -5
+not so nice -4
+not support -3
+not sure -3
+not that good -2
+not that great -4
+not that perfect -3
+not that thrilled -2
+not the best -2
+not the greatest -4
+not the problem 0
+not too bad 1
+not very good -4
+not waterproof -3
+not working -6
+not working well -3
+not worth -5
+nothing bad 3
+nothing goes wrong 0
+nothing like 0
+obnoxiously -6
+offensive -3
+ok 1
+okey 1
+out of luck -3
+outdated -2
+outstanding 7
+outstandingly 7
+over the moon 7
+overheat -4
+overheating -4
+overheats -4
+overpriced -4
+painless 2
+pathetic -4
+perfect 10
+perfectly 10
+perfecto 10
+piece of cake 4
+pity -4
+plague -4
+pleasant 4
+please with 5
+pleased 6
+poop -5
+poor -3
+poorly -3
+powerful 5
+pretty 2
+pretty annoying -3
+pretty bad -3
+pretty cool 3
+pretty good 3
+pretty mediocre -2
+pretty much 0
+pretty nice 3
+pretty great 5
+pretty sure 0
+problem -4
+problems -4
+pros 3
+proud 3
+proudly 3
+really bad -8
+really like 7
+really love 8
+really really love 10
+recommend 3
+recommendable 3
+recommended 3
+regret -4
+regretting -4
+remarkable 3
+ridiculous -4
+ripped off -6
+ripping -2
+rubbish -5
+rude -6
+sad -3
+fast 4
+very fast 6
+sadly -3
+satisfactory 5
+satisfied 5
+scratches -2
+seemed perfect 5
+seems like 0
+shame -4
+shame on -4
+sick of -5
+skeptical -3
+sleek 5
+sluggish -3
+sluggishly -3
+so bad -8
+so slow -4
+something like 0
+sophisticated 4
+sorry -2
+spectacular 3
+stable 3
+stinks -4
+stop working -3
+stopped working -3
+stops working -3
+stunning 5
+stupid -3
+sturdy 3
+suck -3
+suck up -3
+sucks -3
+superb 4
+superior 5
+supper 5
+supportive 3
+tedious -5
+terrible -7
+absolutely terrible -10
+things like 0
+thrilled 5
+tidy 2
+too bad -7
+fickle -5
+too difficult -7
+trash -3
+trouble -4
+trusted 6
+ugly -5
+unable to -5
+unbearable -4
+unbeatable 7
+uncomfortable -4
+unfortunately -5
+unhappy -3
+unhelpful -3
+unique 4
+unnecessary -3
+unpleasant -4
+unresponsive -4
+unrivaled 4
+unsatisfied -4
+unusable -5
+unuseable -5
+upset -4
+useable 3
+used to like 1
+useful 3
+useless -5
+valued 7
+very bad -7
+very Disappointed -8
+very poor -8
+very pleasant 8
+very well 6
+want to like -3
+wanted to like -3
+was like 0
+wasn't a big issue 0
+wasn't bad 3
+wasn't too bad 2
+waste -5
+weak -5
+wearing out -3
+well 4
+well done 5
+well-known 2
+what the hell -6
+what worse -5
+what's worse -5
+whole nine yards 9
+without any problems 1
+without difficulty 2
+woefully inadequate -8
+won't help -4
+won't charge -7
+wonderful 5
+wont recommend -5
+wore out -3
+work fine 4
+work great 6
+work perfect 6
+work well 5
+working great 6
+works fantastic 6
+works fine 4
+works great 6
+works perfect 6
+works well 5
+worried -3
+worse -7
+worst -10
+worthless -7
+would be good 1
+would like 0
+wouldn't recommend -5
+wouldn't suggest -6
+wouldn't work -3
+wouldnt recommend -5
+wrong -2

@@ -1,0 +1,12 @@
+good 2
+really good 4
+very good 4
+very very good 6
+really really good 6
+very very very good 10
+bad -2
+not bad 4
+very bad -6
+not that bad -2
+really bad -5
+really really bad -8
