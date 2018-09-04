@@ -1,10 +1,14 @@
 
-from Data_Layer import DataLayer
+from src.Data_Layer import DataLayer
 import re
 import string
 # from Main import has_unchecked_descendants
 # from Main import get_unchecked_ultimate_descendants
-from Main import *
+# from Main import *
+
+from src.Main import reset_all_trees, set_all_ancestors_checked, first_in_second, get_unchecked_ultimate_descendants, \
+    has_unchecked_descendants
+
 
 class UtilityFunctions(object):
 
@@ -51,11 +55,16 @@ class UtilityFunctions(object):
 
 
     def score_individual_piece_of_text(self ,text = None, sentiment_trees = None):
+        """ scores individual text/File/multiple-clauses """
 
         if not text:
             text = self.clauses
 
+        clause_score = []
+
+        file_score = 0
         for clause in text:
+
 
             score = 0
             for tree in sentiment_trees:
@@ -71,4 +80,16 @@ class UtilityFunctions(object):
                             set_all_ancestors_checked(unchecked_descendant) # mark all ancestors checked
 
 
-            print("clause: {}\n Score agaist clause: {}".format(clause, score))
+            clause_score.append((clause, score))  # append clauses against their scores
+            print("clause: {} --> Score : {}".format(clause, score))
+        # reset all trees for next clause match
+        reset_all_trees(sentiment_trees)
+
+        return clause_score
+
+
+    # def score_against_single_phrases(self, string, sentiment_phrase):
+    #     """"""
+
+
+

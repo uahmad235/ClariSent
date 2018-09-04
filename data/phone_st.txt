@@ -142,6 +142,7 @@ doesn't respond to -4
 doesn't support -2
 doesn't work -6
 doesn't charge -6
+doesn't mess 4
 don't buy -7
 don't impress -5
 don't like -5
@@ -158,7 +159,7 @@ drains -3
 dreadful -5
 dull -4
 dump -4
-easy to 5
+easy 5
 ecstatic 5
 effective 4
 efficient 4
@@ -250,7 +251,11 @@ impressed 5
 inadequate -2
 incapable -5
 inconvenient -5
-incredibly disappointed -10
+incredible 5
+incredibly disappointed -9
+incredibly sharp 10
+infatuated 9
+infatuation 9
 intact 2
 irritating -7
 is dead -4
@@ -290,6 +295,7 @@ look like 0
 looked like 0
 looks like 0
 losing hope -5
+lot easier 5
 love 6
 loved 6
 lovely 6
@@ -327,6 +333,8 @@ no issues 3
 no luck -5
 no problem 1
 no problems 1
+no quality issues 4
+no quality -6
 no response -3
 no solutions -3
 no trouble 1
@@ -438,6 +446,7 @@ problems -4
 pros 3
 proud 3
 proudly 3
+quality 3
 really bad -8
 really like 7
 really love 8
@@ -523,6 +532,7 @@ useable 3
 used to like 1
 useful 3
 useless -5
+usually don't like 0
 valued 7
 very bad -7
 very Disappointed -8
