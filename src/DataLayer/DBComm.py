@@ -1,8 +1,9 @@
 
 from mongoengine import *
-
+from typing import List, Optional
 from src.DataLayer.DBModel.ClauseLevelDetails import ClauseLevelDetail
 from src.DataLayer.DBModel.FileDetails import FileDetail
+from src.DataLayer.DBModel.Tokenizers import Tokenizer
 
 
 class DBComm(object):
@@ -37,5 +38,23 @@ class DBComm(object):
             raise(Exception(err))
 
 
+    def get_all_FileDetails_objs(self) -> Optional[List[FileDetail]]:
 
-    
+        if FileDetail.objects:
+            return FileDetail.objects
+
+    def get_all(self,collection_name):
+
+        if collection_name == "FileDetails":
+            return FileDetail.objects
+
+    def write_tokenizers_to_db(self, file_path ):
+
+        with open(file_path, 'r') as f:
+            for line in f:
+                Tokenizer(token = line.strip()).save()
+
+    @staticmethod
+    def read_sentiment_tokenizers_from_db():
+
+        return [token.token for token in Tokenizer.objects]

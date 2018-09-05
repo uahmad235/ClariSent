@@ -1,10 +1,12 @@
 # setting python working environment
 
-from anytree import RenderTree, NodeMixin, PostOrderIter, PreOrderIter, LevelOrderIter
+from src.SentimentTreesManager import *
 from src.Utility_Functions import *
-import os
-from src.Data_Layer import create_files_from_comments, create_files_from_file, read_all_files_in_folder
+from src.DataLayer.Data_Layer import read_all_files_in_folder
 from enum import Enum
+from collections import Counter
+from nltk.corpus import stopwords
+from src.DataLayer.DBComm import DBComm
 
 
 #  "not working->childOf->None" and "not working well->childOf->well" anomaly
@@ -18,195 +20,79 @@ class NodeStatus(Enum):
     """ represents a node's status """
     pass
 
-
-class MyNode(NodeMixin):
-    """ contains enhanced attributes for a Sentiment-Phrase (Node)"""
-
-    def __init__(self, name, parent=None, value=None, checked=False):
-        super(MyNode, self).__init__()
-
-        # attributes default
-        self.name = name
-        self.parent = parent
-
-        # attributes modified
-        self.value = value
-        self.checked = checked
-
-def print_tree(tree):
-    """ prints a single passed tree """
-    for pre, _, node in RenderTree(tree):
-        treestr = u"%s%s" % (pre, node.name)
-        print(treestr.ljust(30), node.value, node.checked)
-
-def first_in_second(first, second):
-    """ returns true if the first expression is contained in second """
-    compiled_regex = re.compile(r"\b(%s)\b" % (first), re.IGNORECASE)
-    objects = re.search(compiled_regex, second)
-
-    if objects:
-        return True
-
-    return False
-
-def regex_demo():
-    import re
-    text = """this  is a cat. this is very very good cat. i like it very much
-                This is a brown dog. thisse ! Is it compatible?\n
-                Very Good"""
-    word_separator = re.compile(r"\b(very good)\b", re.IGNORECASE)
-    m = re.findall(word_separator, text)
-    if m:
-        print(m)
-        # print(m.group(1))
-    else:
-        print("None")
-
-def search_in_descendants(trees, new_term):
-    """ searches for new sub-term in roots of all trees """
-    for tree in trees:
-        # if tree.name in new_term: # if tree contains
-        if first_in_second(tree.name, new_term):
-            return tree
-
-def insert_descendant(found_tree, new_term, value):
-    """ adds the term to tree as descendant on specified position """
-
-    # if found_tree.name in new_term:
-    if first_in_second(found_tree.name, new_term):
-        #     if children exist match term to childs data
-        if found_tree.children:
-            for child in found_tree.children:  # iterate all childs
-
-                # if child.name in new_term:  # child contains new_term
-                if first_in_second(child.name, new_term):
-                    insert_descendant(child, new_term, value)  # insert in child next time
-                    break  # don't iterate for next childs if it's found in some child already
-
-            else:  # if new_term's data doesn't contain in any child (loop doesn't break )
-                MyNode(new_term, value=value, parent=found_tree)
-
-        else:  # no children
-            MyNode(new_term, value=value, parent=found_tree)
-
-def make_trees(sentiment_terms):
-    """ returns list of "dictionary of trees" """
-    all_trees = []
-    for i, term in enumerate(sentiment_terms):
-        # if it is a single-word term add as root into tree-list
-        if len(term[0].split(' ')) == 1:
-            all_trees.append(MyNode(name=term[0], value=term[1]))
-        else:
-            found_tree = search_in_descendants(all_trees, term[0])
-
-            if found_tree:
-                # leaf_nodes = get_leaf_nodes_of_tree(found_tree)
-                insert_descendant(found_tree, term[0], term[1])
-
-            else:  # no single-term root found for new_term
-                # add multi-word phrase directly as root
-                all_trees.append(MyNode(name=term[0], value=term[1]))
-
-    return all_trees
-
-def has_unchecked_descendants(tree):
-    """ returns a boolean than a tree has unchecked descendant or not"""
-
-    for node in LevelOrderIter(tree):
-        if not node.checked:  # if any node is not checked i.e., node.checked = False
-            return True
-
-    return False
-
-def get_unchecked_ultimate_descendants(tree):
-    """ return final unchecked descendant """
-
-    return reversed([x for x in LevelOrderIter(tree) if not x.checked ])  # 133
-
-def set_all_ancestors_checked(node):
-
-    """ sets all ancestors of a specific node checked"""
-    while (node):
-
-        node.checked = True
-        node = node.parent
-
-def reset_all_trees(all_trees):
-    """ reset the checked attribute of all the trees as FLase"""
-    for i, t in enumerate(all_trees[:]):
-
-        for pre, _, node in RenderTree(t):
-            node.checked = False
-
 def split_on_spaces(text):
-
     return text.split(' ')
-
 
 
 def main():
     """ entry point of the programme """
+
+    trees_manager = SentimentTreesManager()
+
     sentiment_terms = DataLayer().read_sentiment_terms(path="../data/phone_st.txt")
-    all_trees = make_trees(sentiment_terms)
+    all_trees = trees_manager.make_trees(sentiment_terms)
 
-    terms_counter = 0
-    # for i,t in enumerate(all_trees[:]):
-    #     # print_tree(t)
-    #     for pre, _, node in RenderTree(t):
-    #         treestr = u"%s%s%d" % (pre, node.name, i)
-    #         print(treestr.ljust(30), node.value, node.checked)
-    #         terms_counter += 1
-    #     print('*'*40)
+    utils = UtilityFunctions(trees_manager)
 
-    utils = UtilityFunctions()
+    del sentiment_terms    # delete for the sake of memory :)
 
-    del sentiment_terms    # delete for the sake of memory
-
-    # review_1 = """Their staff are rude and they are not very careful with their items however this item arrived in very good condition so I won't grumble at the fact the delivery man was grumpy\
-    # and barely helped me get it into my doorway."""
-    # review_2 = """Very fast delivery! This bed is amazing pure comfort. Extremely good price. Although there is a slight smell of plastic, nothing strong!"""
-
-
-    folder_path = r"C:\Users\Usman Ahmad\Desktop\SA_Module\src\test-files-pos"  # for postitive reviews
+    folder_path = r"C:\Users\Usman Ahmad\Desktop\SA_Module\src\test-files-pos"  # for positive reviews
 
     counter = 0
 
-    from collections import Counter
-
     cnt = Counter()
+    stop_words = set(stopwords.words('english'))
 
-    """
     for i,review_file in enumerate(read_all_files_in_folder(folder_path = folder_path)):
 
         filename = review_file[1]
-        # if i == 100:
-        #     break
+        # if i == 10:
+            # break
         # counter += 1
         tokenized_text = utils.split_string_with_multiple_tokenizers(review_file[0])
 
         for phrase in tokenized_text:
             for token in split_on_spaces(phrase):
-                cnt[token] += 1
+                if token.lower() not in stop_words:
+                    cnt[token] += 1
 
         tokenized_text = map(lambda x: x.strip(), tokenized_text)
 
         print("Review #" ,i)
         clauses_scores = utils.score_individual_piece_of_text(tokenized_text, all_trees[:])
 
-        from src.DataLayer.DBComm import DBComm
-        db_obj = DBComm()
-        db_obj.open_connection(db_name= "ClariSent")
-        db_obj.insert_score_against_complete_review(clauses_scores, filename)
-    """
 
 
+    db_obj = DBComm()
+    db_obj.open_connection(db_name= "ClariSent")
+    # db_obj.insert_score_against_complete_review(clauses_scores, filename)
+
+    pos, neg, neu = 0, 0, 0
+    for i,x in enumerate(db_obj.get_all("FileDetails")):
+
+        # print(x.filename, x.aggregated_score)
+        # for c in x.clause_details_embedded:
+        #     print(c.clause, c.clause_score)
+
+        if x.aggregated_score == 0:
+            print("Review #", i)
+            for c in x.clause_details_embedded:
+                print(c.clause, c.clause_score)
+            neu += 1
+        elif x.aggregated_score >0:
+            pos += 1
+        else:
+            neg += 1
+
+    print("Positive: {}, Negative: {}, Neutral: {}".format(pos, neg, neu))
+
+    print("Accuracy: {}".format((pos+(neu//2))/(pos+neg+neu)))
 
 
     # print("total review-files found :{}".format(counter))
 
-    # import nltk
-    # for x in cnt.most_common(40):
-        # print(x, '  ',cnt[x])
+    for x in cnt.most_common(40):
+        print(x, '  ',cnt[x])
     # tokenized_text = utils.split_string_with_multiple_tokenizers(review_1)
     # tokenized_text = map(lambda x: x.strip(), tokenized_text)
     #
