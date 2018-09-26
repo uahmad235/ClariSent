@@ -94,7 +94,6 @@ def create_files_from_file(read_path, counter = 1):
 
 
 def read_all_files_in_folder(folder_path):
-
     """ reads all files from folder for analysis"""
 
     for filename in os.listdir(folder_path):
@@ -109,3 +108,11 @@ def read_all_files_in_folder(folder_path):
             review_from_file = file.read()[:-2].strip()
             yield (review_from_file, filename)
 
+
+def read_aspects(path):
+    """ reads aspects from file """
+
+    with open(path, encoding="utf-8") as f:
+        aspect_tokens = [token.strip() for token in f]
+
+    return aspect_tokens

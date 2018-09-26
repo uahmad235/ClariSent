@@ -17,16 +17,15 @@ class SentimentTreesManager(object):
     def insert_descendant(self,found_tree, new_term, value):
         """ adds the term to tree as descendant on specified position """
 
-        # if found_tree.name in new_term:
         if UtilityFunctions.first_in_second(found_tree.name, new_term):
-            #     if children exist match term to childs data
+            # if children exist match term to childs data
             if found_tree.children:
                 for child in found_tree.children:  # iterate all childs
 
-                    # if child.name in new_term:  # child contains new_term
+                     # child contains new_term
                     if UtilityFunctions.first_in_second(child.name, new_term):
                         self.insert_descendant(child, new_term, value)  # insert in child next time
-                        break  # don't iterate for next childs if it's found in some child already
+                        break  # don't iterate for next child if it's found in some child already
 
                 else:  # if new_term's data doesn't contain in any child (loop doesn't break )
                     MyNode(new_term, value=value, parent=found_tree)
@@ -58,7 +57,6 @@ class SentimentTreesManager(object):
     @staticmethod
     def has_unchecked_descendants(tree):
         """ returns a boolean than a tree has unchecked descendant or not"""
-
         for node in LevelOrderIter(tree):
             if not node.checked:  # if any node is not checked i.e., node.checked = False
                 return True
@@ -103,7 +101,7 @@ class MyNode(NodeMixin):
     def __init__(self, name, parent=None, value=None, checked=False):
         super(MyNode, self).__init__()
 
-        # attributes default
+        # attributes inherited
         self.name = name
         self.parent = parent
 

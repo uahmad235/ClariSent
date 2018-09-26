@@ -66,7 +66,7 @@ class UtilityFunctions(object):
         return self.clauses
 
 
-    def score_individual_piece_of_text(self ,text = None, sentiment_trees = None):
+    def score_individual_piece_of_text(self ,text = None, sentiment_trees = None, aspects = None):
         """ scores individual text/File/multiple-clauses """
 
         # import src.SentimentTreesManager.SentimentTreesManager
@@ -78,7 +78,7 @@ class UtilityFunctions(object):
         file_score = 0
         for clause in text:
 
-
+            sentiment_term_matched = ""
             score = 0
             for tree in sentiment_trees:
 
@@ -92,10 +92,10 @@ class UtilityFunctions(object):
                                                                 not unchecked_descendant.checked:
                             score += int(unchecked_descendant.value)
                             src.SentimentTreesManager.SentimentTreesManager.set_all_ancestors_checked(unchecked_descendant) # mark all ancestors checked
+                            sentiment_term_matched = unchecked_descendant.name
 
-
-            clause_score.append((clause, score))  # append clauses against their scores
-            print("clause: {} --> Score : {}".format(clause, score))
+            clause_score.append((clause, score, sentiment_term_matched))  # append clauses against their scores
+            print("clause: {} --> Score : {} -> term : {}".format(clause, score, sentiment_term_matched))
         # reset all trees for next clause match
         self.trees_manager.reset_all_trees()
 

@@ -63,11 +63,14 @@ charming 5
 clean 3
 hard -3
 very hard -6
+comfortably 4
+comfortable 4
 complaining -3
 complaint -3
 complaints -3
 completely dead -6
-completely worthless -10
+completely worthless -9
+completely secure 6
 compliments 3
 confused -3
 cons -3
@@ -160,6 +163,7 @@ dreadful -5
 dull -4
 dump -4
 easy 5
+easier 5
 ecstatic 5
 effective 4
 efficient 4
@@ -170,13 +174,14 @@ embarrassed -3
 enhanced 3
 enjoying 5
 excactly like 0
+exactly as described 7
 excelente 5
 excellent 7
 exceptional 2
 excellent product 10
-extremely frustrating -10
+extremely frustrating -9
 extremely good 10
-extremely uncomfortable -10
+extremely uncomfortable -9
 fabulous 5
 fake -5
 fake or not -1
@@ -269,6 +274,7 @@ its like 0
 joke -2
 junk -4
 just like 0
+joy 2
 king 5
 klutz -3
 lack -4
@@ -302,6 +308,7 @@ lovely 6
 loves 6
 loving 6
 low quality -5
+low cost 2
 loyal 4
 lump -3
 luv 6
@@ -314,6 +321,8 @@ mess -4
 messes -4
 mistake -5
 misuse -3
+much cheaper 6
+much less expensive 5
 negative -5
 never buy -8
 never buying -8
@@ -367,6 +376,7 @@ not correct -4
 not damaged 0
 not disappoint 0
 not disappointed 3
+not easy -4
 not enjoyable -4
 not enough -3
 not even be able to -5
@@ -418,6 +428,7 @@ overheats -4
 overpriced -4
 painless 2
 pathetic -4
+peachy-keen 4
 perfect 10
 perfectly 10
 perfecto 10
@@ -471,6 +482,8 @@ satisfied 5
 scratches -2
 seemed perfect 5
 seems like 0
+seamless 4
+seamlessly 5
 shame -4
 shame on -4
 sick of -5
@@ -496,12 +509,16 @@ suck -3
 suck up -3
 sucks -3
 superb 4
+super 4
 superior 5
 supper 5
 supportive 3
+surprised 5
+sweet 3
+sweetest 8
 tedious -5
 terrible -7
-absolutely terrible -10
+absolutely terrible 9
 things like 0
 thrilled 5
 tidy 2
@@ -509,6 +526,7 @@ too bad -7
 fickle -5
 too difficult -7
 trash -3
+tremendous 7
 trouble -4
 trusted 6
 ugly -5
@@ -538,6 +556,7 @@ very bad -7
 very Disappointed -8
 very poor -8
 very pleasant 8
+very satisfied 8
 very well 6
 want to like -3
 wanted to like -3
@@ -557,6 +576,7 @@ what's worse -5
 whole nine yards 9
 without any problems 1
 without difficulty 2
+winner 5
 woefully inadequate -8
 won't help -4
 won't charge -7
@@ -575,7 +595,7 @@ works perfect 6
 works well 5
 worried -3
 worse -7
-worst -10
+worst -9
 worthless -7
 would be good 1
 would like 0
@@ -583,4 +603,5 @@ wouldn't recommend -5
 wouldn't suggest -6
 wouldn't work -3
 wouldnt recommend -5
+wow 6
 wrong -2

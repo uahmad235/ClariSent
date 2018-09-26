@@ -24,9 +24,10 @@ class DBComm(object):
         _aggregated_score = 0
 
         clauses_list = []
-        for _clause, _score in clauses_scores:
+        for _clause, _score, _sentiment_term_matched in clauses_scores:
 
-            clauses_list.append(ClauseLevelDetail(clause = _clause , clause_score = _score))
+            clauses_list.append(ClauseLevelDetail(clause = _clause , clause_score = _score,\
+                                                  sentiment_term_matched = _sentiment_term_matched))
             _aggregated_score += _score
 
         try:
