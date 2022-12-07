@@ -6,6 +6,8 @@ The code implements a PhD research paper published [here](https://www.research.m
 ## Implementation Dependencies:
 * You need to install MongoDb and pymongo.
 
+## Dataset:
+* The project requires domain-specific sentiment vocabulary which has been taken from the paper mentioned above. The vocabulary can be found under `data/` directory.
 ## Run project:
 * Run following command on project root:
  ```
