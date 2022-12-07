@@ -21,11 +21,9 @@ class DataLayer(object):
 
         return sorted_st
 
-
     def sort_by_length(self, data):
         # sort by length for making trees
         return sorted(data, key=lambda x: len(x[0].split(' ')), reverse=False)
-
 
     @staticmethod
     def read_sentiment_tokenizers(path = "../data/tokenisers.txt"):
@@ -35,22 +33,18 @@ class DataLayer(object):
         with open(path,'r') as f:
             for line in f:
                 tokenizers.append(line.strip())
-
         return tokenizers
 
 
 def process_pandas_chunk(chunk , counter = 1):
     """ process chunks """
-
     print("writing reviews to files...") # 28148
     for review in chunk["reviews"]:
 
         if type(review) is not float:
             if review.strip() == "":
                 counter += 1; continue
-
             file_name = "./text-files-pos/file"+ str(counter) + ".txt"
-
             with open(file_name, 'w+', encoding="utf-8") as file:
 
                 file.write(review)
@@ -63,22 +57,17 @@ def create_files_from_comments(path):
     if not path:
         print("Path must be provided")
         return
-
-
     c_size = 50000
     counter = 0
     # load the big file in smaller chunks
     for gm_chunk in pd.read_csv(path, chunksize=c_size):
         counter += process_pandas_chunk(gm_chunk, counter= counter)
-
         break
 
 
 def create_files_from_file(read_path, counter = 1):
 
     with open(read_path) as file:
-
-        # read
         for review in file:
             if type(review) is not float:
                 if review.strip() == "":
@@ -95,7 +84,6 @@ def create_files_from_file(read_path, counter = 1):
 
 def read_all_files_in_folder(folder_path):
     """ reads all files from folder for analysis"""
-
     for filename in os.listdir(folder_path):
 
         file_path = os.path.join(folder_path, filename)

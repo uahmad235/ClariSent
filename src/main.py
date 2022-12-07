@@ -3,21 +3,20 @@
 # setting python working environment
 
 from src.DataLayer import Data_Layer
-from src.SentimentTreesManager import *
-from src.Utility_Functions import *
+from src.sentiment_trees import SentimentTreesManager
+from src.utils import UtilityFunctions
 from src.DataLayer.Data_Layer import read_all_files_in_folder
-from enum import Enum
 from collections import Counter
 from nltk.corpus import stopwords
 from src.DataLayer.DBComm import DBComm
 
-
-#  "not working->childOf->None" and "not working well->childOf->well" anomaly
-# if we keep the sort order in alphabetic manner, we can keep this anomaly controlled
-# let's see how:
-# if alphabetically sorted, "not working well" will be somewhere next to "not working" and so "not working" will become
-# parent and "not working well" will become it's child.
-
+"""
+"not working->childOf->None" and "not working well->childOf->well" anomaly
+if we keep the sort order in alphabetic manner, we can keep this anomaly controlled
+let's see how:
+if alphabetically sorted, "not working well" will be somewhere next to "not working" and so "not working" will become
+parent and "not working well" will become it's child.
+"""
 
 def split_on_spaces(text):
     return text.split(' ')
