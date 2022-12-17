@@ -1,0 +1,13 @@
+phone
+works
+screen
+battery
+display
+camera
+product
+charger
+performance
+price
+features
+design
+delivery
