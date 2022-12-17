@@ -7,7 +7,7 @@ The code implements a PhD research paper published [here](https://www.research.m
 * You need to install MongoDb
 * In order to install project dependencies run:
   ```
-  pip install requirements.txt
+  pip install -r requirements.txt
   ```
 
 ## Dataset:
