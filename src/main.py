@@ -43,26 +43,17 @@ def main():
     sentiment_terms = data_layer.DataLayer().read_sentiment_terms(path=SENTIMENT_TERMS_PATH)
     all_trees = trees_manager.make_trees(sentiment_terms)
 
-    utils = UtilityFunctions(trees_manager, TOKENIZER_PATH)
     aspects =  data_layer.read_aspects(path = ASPECTS_PATH)
-    # breakpoint()
+    utils = UtilityFunctions(trees_manager, aspects, TOKENIZER_PATH)
 
     del sentiment_terms    # delete for the sake of memory :)
-
-    # folder_path = r"C:\Users\Usman Ahmad\Desktop\SA_Module\src\test-files-pos"  # for positive reviews
-
-    counter = 0
 
     cnt = Counter()
     stop_words = set(stopwords.words('english')) # stop_words from nltk
 
-    for i, review_file in enumerate(read_all_files_in_folder(folder_path = EVAL_DIR)):
+    for i, (filename, review) in enumerate(read_all_files_in_folder(folder_path = EVAL_DIR)):
 
-        filename = review_file[1]  # review_file = tuple(review, filename)
-        # if i == 10:
-            # break
-        # counter += 1
-        tokenized_text = utils.split_string_with_multiple_tokenizers(review_file[0])
+        tokenized_text = utils.split_string_with_multiple_tokenizers(review)
 
         for phrase in tokenized_text:
             for token in split_on_spaces(phrase):
@@ -71,8 +62,8 @@ def main():
 
         tokenized_text = map(lambda x: x.strip(), tokenized_text)
 
-        print("Review #" ,i)
-        clauses_scores = utils.score_individual_piece_of_text(tokenized_text, all_trees[:], aspects= aspects)
+        print("Review #", i)
+        clauses_scores = utils.score_individual_piece_of_text(tokenized_text, all_trees[:])
 
         db_obj.insert_score_against_complete_review(clauses_scores, filename)
 
@@ -92,8 +83,6 @@ def main():
     print("Positive: {}, Negative: {}, Neutral: {}".format(pos, neg, neu))
 
     print("Accuracy: {}".format((pos+(neu//2))/(pos+neg+neu)))
-
-    print("total review-files found :{}".format(counter))
 
     for x in cnt.most_common(40):
         print(x, '  ',cnt[x])

@@ -94,7 +94,7 @@ def read_all_files_in_folder(folder_path):
         with open(file_path, 'r') as file:
 
             review_from_file = file.read()[:-2].strip()
-            yield (review_from_file, filename)
+            yield filename, review_from_file
 
 
 def read_aspects(path):
