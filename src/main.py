@@ -2,13 +2,22 @@
 
 # setting python working environment
 
-from src.DataLayer import Data_Layer
-from src.sentiment_trees import SentimentTreesManager
-from src.utils import UtilityFunctions
-from src.DataLayer.Data_Layer import read_all_files_in_folder
+from DataLayer import data_layer
+from sentiment_trees import SentimentTreesManager
+from utils import UtilityFunctions
+from DataLayer.data_layer import read_all_files_in_folder
 from collections import Counter
 from nltk.corpus import stopwords
-from src.DataLayer.DBComm import DBComm
+from DataLayer.db_comm import DBComm
+import os
+
+
+SENTIMENT_TERMS_PATH = "data/phone_st.txt"
+ASPECTS_PATH = "data/aspects_phone.txt"
+DB_NAME = "ClariSent"
+EVAL_DIR = "data/eval"  # directory to evaluate sentiments from
+TOKENIZER_PATH = "data/tokenisers.txt"
+
 
 """
 "not working->childOf->None" and "not working well->childOf->well" anomaly
@@ -25,27 +34,29 @@ def split_on_spaces(text):
 def main():
     """ entry point of the programme """
 
+    db_obj = DBComm()
+    auth = {"username": os.environ['USERNAME'], "password": os.environ['PASSWORD']}
+    db_obj.open_connection(db_name=DB_NAME, **auth)
+    
     trees_manager = SentimentTreesManager()
-
-    sentiment_terms = DataLayer().read_sentiment_terms(path="../data/phone_st.txt")
+    
+    sentiment_terms = data_layer.DataLayer().read_sentiment_terms(path=SENTIMENT_TERMS_PATH)
     all_trees = trees_manager.make_trees(sentiment_terms)
 
-    utils = UtilityFunctions(trees_manager)
-    aspects =  Data_Layer.read_aspects(path = r"C:\Users\Usman Ahmad\Desktop\SA_Module\data\Aspects.txt")
+    utils = UtilityFunctions(trees_manager, TOKENIZER_PATH)
+    aspects =  data_layer.read_aspects(path = ASPECTS_PATH)
+    # breakpoint()
 
     del sentiment_terms    # delete for the sake of memory :)
 
-    folder_path = r"C:\Users\Usman Ahmad\Desktop\SA_Module\src\test-files-pos"  # for positive reviews
+    # folder_path = r"C:\Users\Usman Ahmad\Desktop\SA_Module\src\test-files-pos"  # for positive reviews
 
     counter = 0
-
-    db_obj = DBComm()
-    db_obj.open_connection(db_name= "ClariSent")
 
     cnt = Counter()
     stop_words = set(stopwords.words('english')) # stop_words from nltk
 
-    for i,review_file in enumerate(read_all_files_in_folder(folder_path = folder_path)):
+    for i, review_file in enumerate(read_all_files_in_folder(folder_path = EVAL_DIR)):
 
         filename = review_file[1]  # review_file = tuple(review, filename)
         # if i == 10:

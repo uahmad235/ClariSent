@@ -155,7 +155,7 @@ don't work -6
 donot work -6
 dont buy -6
 dont recommend -3
-don’t give up the day job -4
+don't give up the day job -4
 doubtful -3
 drain -3
 drains -3

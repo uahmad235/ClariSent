@@ -1,23 +1,20 @@
 
-from mongoengine import *
+from mongoengine import connect, ValidationError
 from typing import List, Optional
-from src.DataLayer.DBModel.ClauseLevelDetails import ClauseLevelDetail
-from src.DataLayer.DBModel.FileDetails import FileDetail
-from src.DataLayer.DBModel.Tokenizers import Tokenizer
+from DataLayer.DBModel.ClauseLevelDetails import ClauseLevelDetail
+from DataLayer.DBModel.FileDetails import FileDetail
+from DataLayer.DBModel.Tokenizers import Tokenizer
 
 
 class DBComm(object):
     """ manages db connection and read-write operations of DB"""
 
-
-    def open_connection(self, db_name = None):
+    def open_connection(self, db_name, **params):
         """ connects to a specified db name"""
-        connect(db_name)
-
+        connect(db_name, **params)
 
     def insert_score_against_single_phrase(self, filename, phrase, score):
         pass
-
 
     def insert_score_against_complete_review(self, clauses_scores, _filename):
 

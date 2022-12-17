@@ -1,6 +1,6 @@
 from anytree import RenderTree, LevelOrderIter, NodeMixin
 
-from src.utils import *
+from utils import *
 
 
 

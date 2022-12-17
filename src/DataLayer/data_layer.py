@@ -26,7 +26,7 @@ class DataLayer(object):
         return sorted(data, key=lambda x: len(x[0].split(' ')), reverse=False)
 
     @staticmethod
-    def read_sentiment_tokenizers(path = "../data/tokenisers.txt"):
+    def read_sentiment_tokenizers(path):
         """ read sentiment tokenizers for text tokenizing """
 
         tokenizers = []
